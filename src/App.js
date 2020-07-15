@@ -16,7 +16,7 @@ useEffect(() => {
   .then(response => {
     console.log(response)
     setPhoto(response.data.hdurl)
-    setDescription(response.data.explanation)
+    setDescription(response.data)
   }).catch(err => {
     console.log(`the err was ${err}`)
   })

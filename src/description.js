@@ -5,7 +5,9 @@ const Description = props =>{
     const { description } = props
     return (
         <div>
-            <p>{description}</p>
+            <h2>{description.title}</h2>
+            <h3>{description.date}</h3>
+            <p>{description.explanation}</p>
         </div>
     )
 }
