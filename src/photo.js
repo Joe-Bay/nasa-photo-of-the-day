@@ -15,7 +15,6 @@ const keyframe = keyframes`
 `
 
 
-
 const PhotoContainerStyling = styled.div`
     display: flex;
     justify-content: center;
@@ -24,6 +23,9 @@ const PhotoContainerStyling = styled.div`
     img{
         animation: ${keyframe} 2s ease-in-out forwards;
         border-radius: 10px;
+        border: 3px solid black;
+        box-shadow: 3px;
+
     }
 `
 
