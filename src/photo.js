@@ -5,20 +5,11 @@ import styled, { keyframes } from 'styled-components'
 
 const keyframe = keyframes`
 0%{
-    transform: scale(0)
-}
-25%{
-    transform: scale(0.25)
-}
-50%{
-    transform: scale(0.5) rotate(90deg)
-    
-}
-75{
-    transform: scale(0.75) rotate(180deg)
+    transform: scale(0) 
+
 }
 100%{
-    transform: scale(1) rotate(360deg)
+    transform: scale(1) 
 }
 
 `
@@ -32,8 +23,7 @@ const PhotoContainerStyling = styled.div`
 
     img{
         animation: ${keyframe} 2s ease-in-out forwards;
-
-        
+        border-radius: 10px;
     }
 `
 

@@ -7,11 +7,12 @@ import styled from 'styled-components'
 
 
 const BodyStyling = styled.div`
-  background-image: linear-gradient(to bottom, black, white);
+  /* background-image: linear-gradient(to bottom, black, white); */
+  background-image: url('https://images.unsplash.com/photo-1530508777238-14544088c3ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
   h1{
     text-align: center;
     font-size: 5rem;
-    text-shadow: 2px 2px;
+    text-shadow: 1px 1px;
     color: whitesmoke;
   }
 

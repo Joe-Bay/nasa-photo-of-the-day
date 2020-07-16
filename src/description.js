@@ -5,12 +5,13 @@ import styled from 'styled-components'
 
 const DescriptionStyle = styled.div`
 text-align: center;
-
+background-color: lightgray;
+border-radius: 10px;
+box-shadow: 5px;
+padding: 1%;
 
 
 `
-
-
 
 
 const Description = props =>{
