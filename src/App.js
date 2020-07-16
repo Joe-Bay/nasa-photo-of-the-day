@@ -1,9 +1,22 @@
 import React, { useState , useEffect } from "react";
 import "./App.css";
 import axios from 'axios'
-
 import Description from './description'
 import Photo from './photo'
+import styled from 'styled-components'
+
+
+const BodyStyling = styled.div`
+  background-image: linear-gradient(to bottom, black, white);
+  h1{
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: 2px 2px;
+    color: whitesmoke;
+  }
+
+`
+
 
 function App() {
 
@@ -27,11 +40,11 @@ useEffect(() => {
 
 
   return (
-    <div className="AppContainer">
+    <BodyStyling className="AppContainer">
       <h1>Nasa Photo of the Day</h1>
       <Photo photo={photo}/>
       <Description description={description}/>
-    </div>
+    </BodyStyling>
   );
 }
 
